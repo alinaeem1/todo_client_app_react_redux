@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import TodoEnter from "./components/TodoEnter";
+import TodoItem from "./components/TodoItem";
 
 class App extends Component {
   constructor(props) {

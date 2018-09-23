@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./TodoItem.css";
 
 export default class TodoItem extends Component {
@@ -11,7 +11,7 @@ export default class TodoItem extends Component {
   state = {};
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper_item">
         <button
           className="removeTodo"
           onClick={e => this.removeTodo(this.props.id)}
