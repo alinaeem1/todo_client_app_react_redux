@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./TodoEnter.css";
+
 export default class TodoEnter extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +21,7 @@ export default class TodoEnter extends Component {
   render() {
     return (
       <div>
-        <input type="text" value="" onChange="{this.handleChange}" />
+        <input type="text" value="" onChange={this.handleChange} />
         <button
           className="btn btn-primary"
           onClick={() => this.addTodo(this.state.value)}
