@@ -9,12 +9,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      todos: [
-        { id: 0, text: "Hello" },
-        { id: 1, text: "yahoo" },
-        { id: 2, text: "hi" }
-      ],
-      nextId: 3
+      todos: [{ id: 0, text: "Home Work at 4 PM" }],
+      nextId: 1
     };
 
     this.addTodo = this.addTodo.bind(this);
