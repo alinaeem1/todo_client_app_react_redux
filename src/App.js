@@ -22,11 +22,18 @@ class App extends Component {
   }
 
   addTodo(textForTodo) {
-    console.log("New Todo is Added: ", textForTodo);
+    let todos = this.state.todos.slice();
+    todos.push({ id: this.state.nextId, text: textForTodo });
+    this.setState({
+      todos: todos,
+      nextId: ++this.state.nextId
+    });
   }
 
   removeTodo(id) {
-    console.log("Todo removing: ", id);
+    this.setState({
+      todos: this.state.todos.filter((todo, index) => todo.id !== id)
+    });
   }
   render() {
     return (
