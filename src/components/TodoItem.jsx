@@ -13,7 +13,7 @@ export default class TodoItem extends Component {
     return (
       <div className="wrapper_item">
         <button
-          className="removeTodo"
+          className="btn btn-danger removeTodo"
           onClick={e => this.removeTodo(this.props.id)}
         >
           remove

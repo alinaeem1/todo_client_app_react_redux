@@ -1,0 +1,16 @@
+.btn {
+  padding: 8px;
+}
+
+input {
+  width: 80%;
+  border: 5px solid blueviolet;
+  margin-right: 10px;
+  padding: 5px;
+  line-height: 17px;
+}
+
+input:focus {
+  outline: none;
+  border: 5px solid yellowgreen;
+}

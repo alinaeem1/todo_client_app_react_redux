@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="wrapper">
+        <div className="container wrapper">
           <Header />
           <TodoEnter textForTodo="" addTodo={this.addTodo} />
           <ul>
