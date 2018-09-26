@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      todos: [{ id: 0, text: "Home Work at 4 PM" }],
+      todos: [{}],
       nextId: 1
     };
 
